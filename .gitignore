@@ -1,0 +1,16 @@
+# Ignore node dependencies (if any)
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore Mac system files
+.DS_Store
+
+# Ignore build artifacts
+dist/
+build/
+
+# Ignore IDE/workspace settings
+.vscode/
+.idea/
