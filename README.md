@@ -1,6 +1,7 @@
 
 
-![icon128](https://github.com/user-attachments/assets/0cc89db7-289d-4d1e-a5a4-5ae936421513)
+![image](https://github.com/user-attachments/assets/c8fbfdd6-5327-48b1-9b3c-4da0c1a9fd65)
+
 
 
 # Browser History Cleaner Sidebar Extension
