@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>History Cleaner</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #38383a;
+    }
+    body {
+      /* width: 300px; */
+      height: 100vh;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+    }
+    .search-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    #searchInput {
+      padding: 8px;
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid #4d4c4c;
+      border-radius: 4px;
+      color: #ffffff;
+    }
+    #searchBtn {
+      padding: 8px;
+      background-color: #216679;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #searchBtn:hover {
+      background-color: #17568a;
+    }
+    #results {
+      flex-grow: 1;
+      overflow-y: auto;
+      margin-bottom: 10px;
+      border: 1px solid #4d4c4c;
+      padding: 5px;
+      border-radius: 4px;
+    }
+    .history-item {
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      border-bottom: 1px solid #4d4c4c;
+      gap: 5px;
+    }
+    .history-item span {
+      flex-grow: 1;
+      word-break: break-all;
+      font-size: 14px;
+    }
+    .delete-btn {
+      padding: 4px 8px;
+      background-color: #d35858;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .delete-btn:hover {
+      background-color: #cc0000;
+    }
+    .controls {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .select-all-container {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    #selectAll {
+      cursor: pointer;
+    }
+    #selectAlltxt {
+      color: #eaebec;
+      font-size: 14px;
+    }
+
+    #deleteSelected {
+      padding: 8px;
+      background-color: #733939;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+    #deleteSelected:hover {
+      background-color: #911a1a;
+    }
+
+    .website-link {
+        align-items: center;
+        color: #d9dbdd;
+        display: flex;
+        overflow: hidden;
+        text-decoration: none;
+    }
+    .website-link:hover {
+      color: #4d77a1;
+    }
+    .website-title {
+        font-size: 12px;
+        font-weight: 500;
+        margin-inline-start: 8px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    #domain {
+        color: #bdbdbd;
+        font-size: 11px;
+        margin-inline-start: 8px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    #domain:hover {
+      color: #4d77a1;
+    }
+
+    .item-visit-time {
+        color: #bdbdbd;
+        font-size: 12px;
+        margin-left: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .item-visit-time span {
+        color: #bdbdbd;
+        font-size: 12px;
+    }
+    .item-visit-count{
+        color: #bdbdbd;
+        font-size: 12px;
+        margin-left: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .item-visit-count span {
+        color: #bdbdbd;
+        font-size: 12px;
+    }
+
+    #footer {
+      text-align: center;
+      font-size: 12px;
+      color: #bdbdbd;
+      margin-top: auto;
+      padding: 10px;
+    }
+    #authr {
+      color: #bdbdbd;
+      text-decoration: none;
+    }
+    #authr:hover {
+      color: #4d77a1;
+    }
+
+
+  </style>
+
+</head>
+<body>
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search history or URL">
+    <button id="searchBtn">Search</button>
+  </div>
+  <div id="results"></div>
+  <div class="controls">
+    <div class="select-all-container">
+      <input type="checkbox" id="selectAll">
+      <label for="selectAll" id="selectAlltxt">Select All</label>
+    </div>
+    <button id="deleteSelected" class="delete-btn">Delete Selected</button>
+  </div>
+  <script src="sidebar.js"></script>
+  
+</body>
+<footer id="footer">Developed by <a id="authr" href="https://bd.linkedin.com/in/asifious" target="_blank">Asif</a></footer>
+</html>
