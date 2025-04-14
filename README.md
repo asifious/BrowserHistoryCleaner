@@ -12,14 +12,14 @@ A lightweight and efficient browser extension that helps you manage your browsin
 ## Installation
 
 1. Download or clone this repository.
-2. Go to `chrome://extensions/` in your browser.
+2. Go to `chrome://extensions/`  or `edge://extensions/` in your browser.
 3. Enable "Developer mode" (top-right toggle).
 4. Click "Load unpacked" and select the project folder.
 
 ## Usage
 
 - Open the sidebar from the extension icon.
-- Browse your history list.
+- Browse your history list by typing the word or website you want to remome from history.
 - Select individual or multiple items to delete.
 - Select All by clicking Select all.
 - Use the "Delete Selected" button to clean up your history.
