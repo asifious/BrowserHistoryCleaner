@@ -1,11 +1,8 @@
-![image](https://github.com/user-attachments/assets/a9118feb-bb8b-4e05-80d1-030c4e41bd62)
-
-
-
-
 # Browser History Cleaner Sidebar Extension
 
 A lightweight and efficient browser extension that helps you manage your browsing history. You can delete entries one by one or select and delete up to 1000 at a time with ease, directly from a convenient sidebar interface.
+
+![image](https://github.com/user-attachments/assets/a9118feb-bb8b-4e05-80d1-030c4e41bd62)
 
 ## Features
 
